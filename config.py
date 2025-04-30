@@ -35,7 +35,7 @@ EVAL_PROTOCOL = os.path.join(BASE_DIR, "LA", "ASVspoof2019_LA_cm_protocols", "AS
 
 # WandB configuration
 WANDB_PROJECT = "ASVspoof2019-NAS"
-WANDB_API_KEY = ""  # Add your API key here or use environment variable
+WANDB_API_KEY = "373119fa114178ac5e09f36834a61c071debfbb8"  # Add your API key here or use environment variable
 
 # Output directory
 OUTPUT_DIR = "./results"
