@@ -150,7 +150,8 @@ def main():
         protocol_file=TRAIN_PROTOCOL,
         feature_type=FEATURE_TYPE,
         max_len=MAX_SEQ_LEN,
-        is_train=True
+        is_train=True,
+        use_subsampling = False,
     )
     
     print("Loading validation dataset...")
