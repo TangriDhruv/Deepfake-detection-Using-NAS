@@ -7,15 +7,16 @@ import random
 import wandb
 from tqdm import tqdm
 from utils.evaluation import evaluate_architecture
+from models.model import DeepfakeDetectionModel
+from search.controller import PPOController
+from search.darts import train_ppo
+from utils.visualization import *
 
 def search_architecture_hybrid(train_loader, val_loader, device, input_channels=60, num_cells=3, 
                               num_nodes=4, num_ops=10, epochs=30, ppo_updates=5, 
                               project_name="deepfake-nas-hybrid"):
     """Hybrid approach combining PPO for exploration with DARTS for optimization"""
-    from models.model import DeepfakeDetectionModel
-    from search.controller import PPOController
-    from search.darts import train_ppo
-    from utils.visualization import *
+    
     
     # Initialize wandb
     wandb.init(project=project_name, name=f"Hybrid_PPO_DARTS_cells{num_cells}_nodes{num_nodes}")
