@@ -15,7 +15,7 @@ def search_architecture_hybrid(train_loader, val_loader, device, input_channels=
     from models.model import DeepfakeDetectionModel
     from search.controller import PPOController
     from search.darts import train_ppo
-    from utils.visualization import visualize_ppo_architecture, visualize_darts_architecture
+    from utils.visualization import *
     
     # Initialize wandb
     wandb.init(project=project_name, name=f"Hybrid_PPO_DARTS_cells{num_cells}_nodes{num_nodes}")
