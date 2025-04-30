@@ -15,7 +15,7 @@ INPUT_CHANNELS = 60  # 20 MFCCs x 3 (static, delta, delta-delta)
 NUM_CELLS = 3
 NUM_NODES = 4
 NUM_OPS = 10
-NAS_EPOCHS = 30
+NAS_EPOCHS = 50
 PPO_UPDATES = 5
 SEARCH_METHOD = 'hybrid'  # PPO+DARTS
 
