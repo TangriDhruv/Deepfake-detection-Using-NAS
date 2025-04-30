@@ -14,12 +14,13 @@ from data.dataset import ASVSpoofDataset
 from models.model import DeepfakeDetectionModel
 from utils.training import search_architecture_hybrid
 from utils.evaluation import evaluate_model
-from utils.visualization import (
-    visualize_architecture, 
-    visualize_darts_architecture,
-    visualize_ppo_architecture,
-    analyze_architecture_statistics
-)
+#from utils.visualization import (
+#    visualize_architecture, 
+#    visualize_darts_architecture,
+#    visualize_ppo_architecture,
+#    analyze_architecture_statistics
+#)
+from utils.visualization import *
 
 def setup_progress_monitoring():
     """Setup enhanced progress monitoring"""
